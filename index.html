@@ -8,14 +8,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <title>Materialize</title>
 
   <style>
-    body {
-      margin: 1rem 0;
-    }
     .box {
       height: 5rem;
     }
@@ -26,7 +21,7 @@
       background-color: #ccc;
     }
     .rect {
-      background-color: #aaa;
+      background-color: lightblue;
       height: 7rem;
       margin: 1rem;
       border-radius: .3rem;
@@ -34,6 +29,42 @@
   </style>
 </head>
 <body>
+  <nav class="nav-wrapper indigo">
+    <div class="container">
+      <a href="" class="brand-logo">Logo</a>
+      <a href="" class="sidenav-trigger" data-target="mobile-links">
+        <span class="material-icons">menu</span>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+        <li>
+          <a href="">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-links">
+    <li>
+      <a href="">Home</a>
+    </li>
+    <li>
+      <a href="">About</a>
+    </li>
+    <li>
+      <a href="">Contact</a>
+    </li>
+  </ul>
+
   <!-- .container
     - It keeps everything inside a central column.
     - It gives it a left margin and a right margin.
@@ -163,5 +194,12 @@
       </div>
     </section>
   </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    const elems = document.querySelectorAll('.sidenav');
+    const instances = M.Sidenav.init(elems, {});
+  </script>
 </body>
 </html>
