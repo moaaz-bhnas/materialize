@@ -19,11 +19,17 @@
     .box {
       height: 5rem;
     }
-    .col {
+    .grid .col {
       text-align: center;
       padding: 2rem!important;
       border: 2px solid #fff;
       background-color: #ccc;
+    }
+    .rect {
+      background-color: #aaa;
+      height: 7rem;
+      margin: 1rem;
+      border-radius: .3rem;
     }
   </style>
 </head>
@@ -116,7 +122,7 @@
       </button>
     </section>
 
-    <section>
+    <section class="grid">
       <h1>Grids</h1>
       <div class="row">
         <!-- .col
@@ -129,12 +135,31 @@
         <div class="col s12 m6 l4 xl2">content</div>
         <div class="col s12 m6 l4 xl2">content</div>
         <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
-        <div class="col s12 m6 l4 xl2">content</div>
+      </div>
+    </section>
+
+    <section class="shadow">
+      <h1>Shadows & Depth</h1>
+
+      <div class="row">
+        <div class="col s2">
+          <div class="rect"></div>
+        </div>
+        <div class="col s2">
+          <div class="rect z-depth-1"></div>
+        </div>
+        <div class="col s2">
+          <div class="rect z-depth-2"></div>
+        </div>
+        <div class="col s2">
+          <div class="rect z-depth-3"></div>
+        </div>
+        <div class="col s2">
+          <div class="rect z-depth-4"></div>
+        </div>
+        <div class="col s2">
+          <div class="rect z-depth-5"></div>
+        </div>
       </div>
     </section>
   </div>
