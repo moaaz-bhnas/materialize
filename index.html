@@ -262,7 +262,7 @@
           <i class="material-icons circle blue">person</i>
           <span class="title">Gon</span>
           <p class="grey-text">HxH</p>
-          <a href="" class="secondary-content">
+          <a href="#" class="secondary-content">
             <i class="material-icons blue-text">email</i>
           </a>
         </li>
@@ -300,13 +300,37 @@
         </li>
       </ul>
     </section>
+
+    <section>
+      <h1>Models</h1>
+
+      <button data-target="terms" class="btn orange modal-trigger">Terms & Condition</button>
+
+      <div class="modal" id="terms">
+        <div class="modal-content">
+          <h4>Terms & Conditions</h4>
+          <p>
+            Dicta ipsum non veritatis illum ut.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn modal-close orange">Agree & Close</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-    const elems = document.querySelectorAll('.sidenav');
-    const instances = M.Sidenav.init(elems, {});
+    {
+      const elems = document.querySelectorAll('.sidenav');
+      const instances = M.Sidenav.init(elems, {});
+    }
+    {
+      const elems = document.querySelectorAll('.modal');
+      const instances = M.Modal.init(elems, {});
+    }
   </script>
 </body>
 </html>
